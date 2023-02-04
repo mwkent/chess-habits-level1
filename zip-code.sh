@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r chess-habits-level1.zip src
+zip -FSr chess-habits-level1.zip src
