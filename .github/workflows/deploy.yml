@@ -18,4 +18,4 @@ jobs:
         aws-region: us-east-1
     - name: Some AWS commands
       run: |
-        aws --region us-east-1
+        aws update-function-code --function-name chess-habits-level1 --zip-file chess-habits-level1.zip
