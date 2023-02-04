@@ -14,5 +14,5 @@ jobs:
         role-to-assume: arn:aws:iam::544653910566:role/github-actions-role
         aws-region: us-east-1
     - name: Some AWS commands
-        run: |
-          aws --region us-east-1
+      run: |
+        aws --region us-east-1
