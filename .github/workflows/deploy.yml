@@ -1,0 +1,18 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::544653910566:role/github-actions-role
+        aws-region: us-east-1
+    - name: Some AWS commands
+        run: |
+          aws --region us-east-1
